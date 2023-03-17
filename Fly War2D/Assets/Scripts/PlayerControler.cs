@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerControler : MonoBehaviour
 {
     public float speed;
+    public float Vspeed;
     private Rigidbody2D rb;
     void Start()
     {
@@ -18,7 +19,10 @@ public class PlayerControler : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(speed * Time.deltaTime,rb.velocity.y);
+        float verticalMove = Input.GetAxisRaw("Vertical");
+        rb.velocity = new Vector2(speed * Time.deltaTime,verticalMove * Vspeed * Time.deltaTime);
+
+        
     }
 
 }
