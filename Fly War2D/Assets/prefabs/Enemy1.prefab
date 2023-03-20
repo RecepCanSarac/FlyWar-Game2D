@@ -155,7 +155,7 @@ MonoBehaviour:
   Espeed: 55
   shootPoint: {fileID: 2210814934945912670}
   Target: {fileID: 4277023602300753216, guid: 58e20ec5395f3344babbdea12dbde15d, type: 3}
-  Ebullet: {fileID: 7605588025462889094, guid: 5678ca41b4b7115459c411ce897041e7, type: 3}
+  Ebullet: {fileID: 6187027876865567226, guid: 679d56f23f617e94a998da0844deea24, type: 3}
   Force: 1500
   fireRate: 5
   Distance: 20
