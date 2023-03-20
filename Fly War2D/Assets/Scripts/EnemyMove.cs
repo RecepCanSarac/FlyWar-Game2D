@@ -53,4 +53,12 @@ public class EnemyMove : MonoBehaviour
         bulletIns.GetComponent<Rigidbody2D>().AddForce(Vector2.right * -Force);
         Destroy(bulletIns, 1.5f);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("DestroyWall"))
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
