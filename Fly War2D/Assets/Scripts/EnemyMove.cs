@@ -11,10 +11,12 @@ public class EnemyMove : MonoBehaviour
     public float Force;
     public float fireRate;
     private float nextTimeFireRate = 0;
+    public static int enemyHealth; 
 
     public float Distance;
     void Start()
     {
+        enemyHealth = 20;
         Physics2D.queriesStartInColliders = false;
         rb = GetComponent<Rigidbody2D>();
     }
@@ -40,7 +42,6 @@ public class EnemyMove : MonoBehaviour
         {
             Debug.DrawLine(transform.position, trigger.point, Color.green);
         }
-
     }
     private void FixedUpdate()
     {
@@ -59,6 +60,16 @@ public class EnemyMove : MonoBehaviour
         if (collision.gameObject.CompareTag("DestroyWall"))
         {
             Destroy(this.gameObject);
+        }
+
+        if (collision.gameObject.CompareTag("bullet"))
+        {
+            enemyHealth -= 12;
+            if (enemyHealth <= 0)
+            {
+                Destroy(gameObject);
+            }
+            Destroy(collision.gameObject);
         }
     }
 }

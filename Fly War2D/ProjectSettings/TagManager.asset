@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - DestroyWall
+  - bullet
   layers:
   - Default
   - TransparentFX
