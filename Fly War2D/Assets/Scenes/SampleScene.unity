@@ -443,6 +443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 536735217}
   - component: {fileID: 536735216}
+  - component: {fileID: 536735218}
   - component: {fileID: 536735215}
   - component: {fileID: 536735214}
   m_Layer: 0
@@ -575,7 +576,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &536735216
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -643,6 +644,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &536735218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536735213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 418dea9e2dbf60847a46ba8d20ff94aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Force: 750
 --- !u!1 &672323475
 GameObject:
   m_ObjectHideFlags: 0
