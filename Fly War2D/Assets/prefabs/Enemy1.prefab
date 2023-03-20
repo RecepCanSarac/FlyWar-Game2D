@@ -158,7 +158,7 @@ MonoBehaviour:
   Ebullet: {fileID: 6187027876865567226, guid: 679d56f23f617e94a998da0844deea24, type: 3}
   Force: 1500
   fireRate: 5
-  Distance: 20
+  Distance: 25
 --- !u!61 &2644791989481937810
 BoxCollider2D:
   m_ObjectHideFlags: 0
