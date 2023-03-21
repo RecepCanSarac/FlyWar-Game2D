@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DestroyWall
   - bullet
+  - speedUp
   layers:
   - Default
   - TransparentFX
