@@ -156,7 +156,7 @@ MonoBehaviour:
   shootPoint: {fileID: 2210814934945912670}
   Target: {fileID: 4277023602300753216, guid: 58e20ec5395f3344babbdea12dbde15d, type: 3}
   Ebullet: {fileID: 6187027876865567226, guid: 679d56f23f617e94a998da0844deea24, type: 3}
-  Force: 1500
+  Force: 750
   fireRate: 5
   Distance: 25
 --- !u!61 &2644791989481937810
