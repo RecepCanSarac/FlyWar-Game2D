@@ -27,7 +27,6 @@ public class PlayerControler : MonoBehaviour
             nextTimeFireRate = Time.time + 1 / fireRate;
             Shoot();
         }
-        Debug.Log(Vspeed);
     }
     private void FixedUpdate()
     {
