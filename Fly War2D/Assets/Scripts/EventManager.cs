@@ -14,12 +14,6 @@ public class EventManager : MonoBehaviour
    
     void Update()
     {
-        if (EnemyMove.enemyHealth <= 0)
-        {
-            if (enemyDead != null)
-            {
-                enemyDead();
-            }
-        }
+       
     }
 }

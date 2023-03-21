@@ -67,7 +67,11 @@ public class EnemyMove : MonoBehaviour
             enemyHealth -= 12;
             if (enemyHealth <= 0)
             {
-                Destroy(gameObject);
+                if (EventManager.enemyDead != null)
+                {
+                    EventManager.enemyDead();
+                    Destroy(this.gameObject);
+                }
             }
             Destroy(collision.gameObject);
         }
