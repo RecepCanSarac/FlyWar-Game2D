@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
     private void skorTxT()
     {
-        skor += 2;
+        skor += 13;
     }
 
     private void Update()
