@@ -12,6 +12,7 @@ public class Astroid : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         random = UnityEngine.Random.Range(-100,101);
+        Destroy(gameObject,3f);
     }
 
     // Update is called once per frame
