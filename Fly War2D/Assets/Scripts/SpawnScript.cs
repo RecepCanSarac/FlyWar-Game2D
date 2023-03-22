@@ -8,14 +8,17 @@ public class SpawnScript : MonoBehaviour
     public GameObject spawnPrefab1;
     public GameObject spawnPrefab2;
     public GameObject speedUpgrade;
+    public GameObject attackSpeedUpgrade;
     public float enemy1Timer;
     public float enemy2Timer;
     public float speedUpgradeTimer;
+    public float attackSpeedUpgradeTimer;
     void Start()
     {
         StartCoroutine(spawnEnemy(enemy1Timer, spawnPrefab1));
         StartCoroutine(spawnEnemy(enemy2Timer, spawnPrefab2));
         StartCoroutine(spawnEnemy(speedUpgradeTimer, speedUpgrade));
+        StartCoroutine(spawnEnemy(attackSpeedUpgradeTimer, attackSpeedUpgrade));
     }
 
     // Update is called once per frame

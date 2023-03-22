@@ -5,14 +5,14 @@ using UnityEngine;
 public class PlayerControler : MonoBehaviour
 {
     public float speed;
-    public static float Vspeed;
+    public float Vspeed;
     public float Force;
     private Rigidbody2D rb;
     public Transform shootPoint;
     public GameObject bullet;
     public float fireRate;
     private float nextTimeFireRate = 0;
-    public GameObject speedArt;
+    public GameObject speedArt,attackSpeedArt;
     void Start()
     {
         Vspeed = 350;
@@ -47,6 +47,11 @@ public class PlayerControler : MonoBehaviour
             Destroy(collision.gameObject);
 
         }
+        if (collision.gameObject.CompareTag("attackSpeed"))
+        {
+            attackSpeed();
+            Destroy(collision.gameObject);
+        }
     }
 
     private void speedUp()
@@ -59,6 +64,15 @@ public class PlayerControler : MonoBehaviour
     private void reset()
     {
         Vspeed = 350f;
+        fireRate = 5f;
         speedArt.SetActive(false);
+        attackSpeedArt.SetActive(false);
+    }
+
+    private void attackSpeed()
+    {
+        attackSpeedArt.SetActive(true);
+        fireRate = 50f;
+        Invoke("reset", 3f);
     }
 }
