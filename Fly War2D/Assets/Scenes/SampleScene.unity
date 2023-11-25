@@ -860,9 +860,11 @@ MonoBehaviour:
   spawnPrefab1: {fileID: 2210814935150425013, guid: 1b5e4daae3e686249b2d41544d130667, type: 3}
   spawnPrefab2: {fileID: 1169553780016638754, guid: 2523ab52225163e4284ca73bc1bb4a89, type: 3}
   speedUpgrade: {fileID: 1916770591904240589, guid: 4f1574c756099454b9fe48e301c222f7, type: 3}
+  attackSpeedUpgrade: {fileID: 476955170}
   enemy1Timer: 1.5
   enemy2Timer: 10
   speedUpgradeTimer: 22
+  attackSpeedUpgradeTimer: 25
 --- !u!1 &672323475
 GameObject:
   m_ObjectHideFlags: 0
