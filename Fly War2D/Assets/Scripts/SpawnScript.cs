@@ -21,11 +21,6 @@ public class SpawnScript : MonoBehaviour
         StartCoroutine(spawnEnemy(attackSpeedUpgradeTimer, attackSpeedUpgrade));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private IEnumerator spawnEnemy(float time, GameObject enemy)
     {
         yield return new WaitForSeconds(time);
